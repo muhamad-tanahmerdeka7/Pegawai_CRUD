@@ -30,3 +30,6 @@ Route::get('/tampildata/{id}', [PegawaiController::class, 'tampildata'])->name('
 Route::post('/editdata/{id}', [PegawaiController::class, 'editdata'])->name('editdata');
 
 Route::get('/hapusdata/{id}', [PegawaiController::class, 'hapusdata'])->name('hapusdata');
+Route::get('/exportpdf', [PegawaiController::class, 'exportpdf'])->name('exportpdf');
+Route::get('/exportexcel', [PegawaiController::class, 'exportexcel'])->name('exportexcel');
+Route::post('/importexcel', [PegawaiController::class, 'importexcel'])->name('importexcel');
